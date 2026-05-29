@@ -1,0 +1,26 @@
+{
+  "Name": "GenRotArea",
+  "Author": "charuse",
+  "Description": "GenRot with Area trigger, same app",
+  "InstallDependencies": ["Syati_ObjectFactories", "ExtAreaObjMgr"],
+  "ModuleData" : [
+    {
+      "NameObjFactory" : [
+        {
+          "Name" : "GenRotArea",
+          "Function" : "createExtActor<GenRotArea>",
+          "Include" : "GenRotArea.h"
+        }
+      ]
+    },
+    {
+      "AreaObjMgr" : [
+        {
+          "Name" : "GenRotArea",
+          "MaxCount" : "64",
+          "Function" : "AreaObjContainer::createManager<AreaObjMgr>"
+        }
+      ]
+    }
+  ]
+}
